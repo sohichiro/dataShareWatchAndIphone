@@ -13,6 +13,8 @@
 #define PUSHA @"pushA"
 #define PUSHB @"pushB"
 #define REPPHONE @"repPhone"
+static NSString* const ktoggleA = @"toggleA";
+static NSString* const ktoggleB = @"toggleB";
 
 @interface AppDelegate ()
 
@@ -20,6 +22,7 @@
 
 @implementation AppDelegate
 
+@synthesize ViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -50,9 +53,6 @@
 
 -(void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController* VC = [storyboard instantiateViewControllerWithIdentifier:@"dataShareViewController"];
-    
     //userInfoの確認
     for (id key in [userInfo keyEnumerator]){
         NSLog(@"userInfo::key = %@ value = %@",key, [userInfo valueForKey:key]);
@@ -62,12 +62,14 @@
     //  NSLog(@"userInfo::key = %@ value = %@",key, [userInfo valueForKey:key]);
     //}
     
+    //userInfoによって処理を変える
     if(userInfo[COMMAND] && [userInfo[COMMAND] isEqualToString:PUSHA]){
-        [VC toggleAlabel];
+        //NotificationCenterで、ViewControllerのUI更新メソッドのコールを発火させる
+        [[NSNotificationCenter defaultCenter] postNotificationName:ktoggleA object:nil userInfo:userInfo];
         reply(@{REPPHONE:PUSHA});
     }
     else if(userInfo[COMMAND] && [userInfo[COMMAND] isEqualToString:PUSHB]){
-        [VC toggleBLabel];
+        [[NSNotificationCenter defaultCenter] postNotificationName:ktoggleB object:nil userInfo:userInfo];
         reply(@{REPPHONE:PUSHB});
     }
     
