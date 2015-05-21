@@ -20,6 +20,7 @@
 
 @implementation AppDelegate
 
+@synthesize ViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -50,8 +51,12 @@
 
 -(void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController* VC = [storyboard instantiateViewControllerWithIdentifier:@"dataShareViewController"];
+    //最前面のViewControllerを取得
+    UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    while (topController.presentedViewController) {
+        topController = topController.presentedViewController;
+    }
+    ViewController* VC = (ViewController*)topController;
     
     //userInfoの確認
     for (id key in [userInfo keyEnumerator]){
