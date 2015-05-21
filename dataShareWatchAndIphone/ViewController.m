@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -22,6 +23,29 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)toggleAlabel {
+    if(self.aLabel.hidden == YES){
+        self.aLabel.hidden = NO;
+    }
+    else {
+        self.aLabel.hidden = YES;
+    }
+    [self.aLabel setNeedsDisplay];
+}
+
+- (void)toggleBLabel {
+    if(self.bLabel.hidden == YES){
+        self.bLabel.hidden = NO;
+    }
+    else {
+        self.bLabel.hidden = YES;
+    }
+    [self.bLabel setNeedsDisplay];
+}
+- (IBAction)testButton:(id)sender {
+    [self toggleAlabel];
 }
 
 @end

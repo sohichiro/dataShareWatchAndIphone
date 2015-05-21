@@ -14,6 +14,12 @@
 		767F91BD1B0D5C15009C2005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767F91BC1B0D5C15009C2005 /* Images.xcassets */; };
 		767F91C01B0D5C15009C2005 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 767F91BE1B0D5C15009C2005 /* LaunchScreen.xib */; };
 		767F91CC1B0D5C15009C2005 /* dataShareWatchAndIphoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 767F91CB1B0D5C15009C2005 /* dataShareWatchAndIphoneTests.m */; };
+		767F91DF1B0D62EF009C2005 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 767F91DE1B0D62EF009C2005 /* InterfaceController.m */; };
+		767F91E11B0D62EF009C2005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767F91E01B0D62EF009C2005 /* Images.xcassets */; };
+		767F91E51B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 767F91E41B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App.app */; };
+		767F91ED1B0D62EF009C2005 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767F91EB1B0D62EF009C2005 /* Interface.storyboard */; };
+		767F91EF1B0D62EF009C2005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767F91EE1B0D62EF009C2005 /* Images.xcassets */; };
+		767F91F21B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 767F91D91B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +30,35 @@
 			remoteGlobalIDString = 767F91AB1B0D5C15009C2005;
 			remoteInfo = dataShareWatchAndIphone;
 		};
+		767F91E61B0D62EF009C2005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767F91A41B0D5C15009C2005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767F91E31B0D62EF009C2005;
+			remoteInfo = "dataShareWatchAndIphone WatchKit App";
+		};
+		767F91F01B0D62EF009C2005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767F91A41B0D5C15009C2005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767F91D81B0D62EF009C2005;
+			remoteInfo = "dataShareWatchAndIphone WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		767F91F91B0D62F0009C2005 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				767F91F21B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		767F91AC1B0D5C15009C2005 /* dataShareWatchAndIphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dataShareWatchAndIphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +74,15 @@
 		767F91C51B0D5C15009C2005 /* dataShareWatchAndIphoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dataShareWatchAndIphoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		767F91CA1B0D5C15009C2005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767F91CB1B0D5C15009C2005 /* dataShareWatchAndIphoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dataShareWatchAndIphoneTests.m; sourceTree = "<group>"; };
+		767F91D91B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "dataShareWatchAndIphone WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		767F91DC1B0D62EF009C2005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767F91DD1B0D62EF009C2005 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		767F91DE1B0D62EF009C2005 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		767F91E01B0D62EF009C2005 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		767F91E41B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dataShareWatchAndIphone WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		767F91EA1B0D62EF009C2005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767F91EC1B0D62EF009C2005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		767F91EE1B0D62EF009C2005 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		767F91D61B0D62EF009C2005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +115,8 @@
 			children = (
 				767F91AE1B0D5C15009C2005 /* dataShareWatchAndIphone */,
 				767F91C81B0D5C15009C2005 /* dataShareWatchAndIphoneTests */,
+				767F91DA1B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension */,
+				767F91E81B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App */,
 				767F91AD1B0D5C15009C2005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +126,8 @@
 			children = (
 				767F91AC1B0D5C15009C2005 /* dataShareWatchAndIphone.app */,
 				767F91C51B0D5C15009C2005 /* dataShareWatchAndIphoneTests.xctest */,
+				767F91D91B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension.appex */,
+				767F91E41B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +173,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		767F91DA1B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				767F91DD1B0D62EF009C2005 /* InterfaceController.h */,
+				767F91DE1B0D62EF009C2005 /* InterfaceController.m */,
+				767F91E01B0D62EF009C2005 /* Images.xcassets */,
+				767F91DB1B0D62EF009C2005 /* Supporting Files */,
+			);
+			path = "dataShareWatchAndIphone WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		767F91DB1B0D62EF009C2005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				767F91DC1B0D62EF009C2005 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		767F91E81B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				767F91EB1B0D62EF009C2005 /* Interface.storyboard */,
+				767F91EE1B0D62EF009C2005 /* Images.xcassets */,
+				767F91E91B0D62EF009C2005 /* Supporting Files */,
+			);
+			path = "dataShareWatchAndIphone WatchKit App";
+			sourceTree = "<group>";
+		};
+		767F91E91B0D62EF009C2005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				767F91EA1B0D62EF009C2005 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +220,12 @@
 				767F91A81B0D5C15009C2005 /* Sources */,
 				767F91A91B0D5C15009C2005 /* Frameworks */,
 				767F91AA1B0D5C15009C2005 /* Resources */,
+				767F91F91B0D62F0009C2005 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				767F91F11B0D62EF009C2005 /* PBXTargetDependency */,
 			);
 			name = dataShareWatchAndIphone;
 			productName = dataShareWatchAndIphone;
@@ -157,6 +250,39 @@
 			productReference = 767F91C51B0D5C15009C2005 /* dataShareWatchAndIphoneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		767F91D81B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767F91F61B0D62F0009C2005 /* Build configuration list for PBXNativeTarget "dataShareWatchAndIphone WatchKit Extension" */;
+			buildPhases = (
+				767F91D51B0D62EF009C2005 /* Sources */,
+				767F91D61B0D62EF009C2005 /* Frameworks */,
+				767F91D71B0D62EF009C2005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767F91E71B0D62EF009C2005 /* PBXTargetDependency */,
+			);
+			name = "dataShareWatchAndIphone WatchKit Extension";
+			productName = "dataShareWatchAndIphone WatchKit Extension";
+			productReference = 767F91D91B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		767F91E31B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767F91F31B0D62F0009C2005 /* Build configuration list for PBXNativeTarget "dataShareWatchAndIphone WatchKit App" */;
+			buildPhases = (
+				767F91E21B0D62EF009C2005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dataShareWatchAndIphone WatchKit App";
+			productName = "dataShareWatchAndIphone WatchKit App";
+			productReference = 767F91E41B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +298,12 @@
 					767F91C41B0D5C15009C2005 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 767F91AB1B0D5C15009C2005;
+					};
+					767F91D81B0D62EF009C2005 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					767F91E31B0D62EF009C2005 = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -190,6 +322,8 @@
 			targets = (
 				767F91AB1B0D5C15009C2005 /* dataShareWatchAndIphone */,
 				767F91C41B0D5C15009C2005 /* dataShareWatchAndIphoneTests */,
+				767F91D81B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension */,
+				767F91E31B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +343,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767F91D71B0D62EF009C2005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767F91E11B0D62EF009C2005 /* Images.xcassets in Resources */,
+				767F91E51B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767F91E21B0D62EF009C2005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767F91ED1B0D62EF009C2005 /* Interface.storyboard in Resources */,
+				767F91EF1B0D62EF009C2005 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +385,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		767F91D51B0D62EF009C2005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767F91DF1B0D62EF009C2005 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +400,16 @@
 			isa = PBXTargetDependency;
 			target = 767F91AB1B0D5C15009C2005 /* dataShareWatchAndIphone */;
 			targetProxy = 767F91C61B0D5C15009C2005 /* PBXContainerItemProxy */;
+		};
+		767F91E71B0D62EF009C2005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767F91E31B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit App */;
+			targetProxy = 767F91E61B0D62EF009C2005 /* PBXContainerItemProxy */;
+		};
+		767F91F11B0D62EF009C2005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767F91D81B0D62EF009C2005 /* dataShareWatchAndIphone WatchKit Extension */;
+			targetProxy = 767F91F01B0D62EF009C2005 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +428,14 @@
 				767F91BF1B0D5C15009C2005 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		767F91EB1B0D62EF009C2005 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767F91EC1B0D62EF009C2005 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,6 +577,62 @@
 			};
 			name = Release;
 		};
+		767F91F41B0D62F0009C2005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = dataShareWatchAndIphone_WatchKit_Extension;
+				INFOPLIST_FILE = "dataShareWatchAndIphone WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		767F91F51B0D62F0009C2005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = dataShareWatchAndIphone_WatchKit_Extension;
+				INFOPLIST_FILE = "dataShareWatchAndIphone WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		767F91F71B0D62F0009C2005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dataShareWatchAndIphone WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		767F91F81B0D62F0009C2005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "dataShareWatchAndIphone WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +658,22 @@
 			buildConfigurations = (
 				767F91D31B0D5C15009C2005 /* Debug */,
 				767F91D41B0D5C15009C2005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		767F91F31B0D62F0009C2005 /* Build configuration list for PBXNativeTarget "dataShareWatchAndIphone WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767F91F41B0D62F0009C2005 /* Debug */,
+				767F91F51B0D62F0009C2005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		767F91F61B0D62F0009C2005 /* Build configuration list for PBXNativeTarget "dataShareWatchAndIphone WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767F91F71B0D62F0009C2005 /* Debug */,
+				767F91F81B0D62F0009C2005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

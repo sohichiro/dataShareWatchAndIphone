@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
+#define COMMAND @"command"
+#define PUSHA @"pushA"
+#define PUSHB @"pushB"
+#define REPPHONE @"repPhone"
 
 @interface AppDelegate ()
 
@@ -40,6 +46,32 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController* VC = [storyboard instantiateViewControllerWithIdentifier:@"dataShareViewController"];
+    
+    //userInfoの確認
+    for (id key in [userInfo keyEnumerator]){
+        NSLog(@"userInfo::key = %@ value = %@",key, [userInfo valueForKey:key]);
+    }
+    //こんな書き方もある
+    //for (id key in userInfo){
+    //  NSLog(@"userInfo::key = %@ value = %@",key, [userInfo valueForKey:key]);
+    //}
+    
+    if(userInfo[COMMAND] && [userInfo[COMMAND] isEqualToString:PUSHA]){
+        [VC toggleAlabel];
+        reply(@{REPPHONE:PUSHA});
+    }
+    else if(userInfo[COMMAND] && [userInfo[COMMAND] isEqualToString:PUSHB]){
+        [VC toggleBLabel];
+        reply(@{REPPHONE:PUSHB});
+    }
+    
+    return;
 }
 
 @end
